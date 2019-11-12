@@ -1,13 +1,14 @@
 import timeit
 
-mycode = '''
+mysetup = '''
 def mean(t):
     sum = 0
     for i in t:
         sum += i
     return sum / len(t)
+'''
     
-
+mycode = '''
 def hairy(l: list):
     result = []
     for i in range(0, len(l)):
@@ -25,4 +26,4 @@ hairy(lijst)
 
 '''
 
-print (timeit.timeit(stmt = mycode, number = 1000000))
+print (timeit.timeit(setup = mysetup, stmt = mycode, number = 1000000))
