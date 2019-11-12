@@ -6,4 +6,5 @@ def recFind(l: list, x):
     return recFind(l[:-1], x)
 
 l = [0, 1, 2, 3, 4, 5]
-print(recFind(l, 3))
+print(recFind(l, 4))
+print(recFind(l, 300))
