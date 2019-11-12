@@ -21,3 +21,10 @@ for i ∈ 0 . . . l−1 do
     end for
 end for
 return result
+
+1.6.6:
+When executed one million times back to back
+optimized: 6.5403216
+given:     8.0183027
+A healthy 20.30386% improvement
+We just big O instead of timing because big O isn't dependent on hardware speed.
