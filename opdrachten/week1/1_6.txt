@@ -1,0 +1,23 @@
+1.6.2: O(n^4)
+
+1.6.4:
+input: an array of students, of length l: arr
+    output: an array of all tuples of three unique 
+            students and their average hair length
+
+
+
+result <- an empty array of 3-tuples of length
+totalAverage = avgHairLength(arr)
+m ← 0
+for i ∈ 0 . . . l−1 do
+    for j ∈ i + 1 . . . l−1  do
+        for k ∈ j + 1 . . . l do 
+            tup ← (arr[i], arr[j], arr[k])
+            relativeHair ← avgHairLength(tup) - totalAverage
+            result[m] ← (tup, relativeHair) 
+            m++
+        end for
+    end for
+end for
+return result

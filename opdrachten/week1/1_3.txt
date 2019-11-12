@@ -1,0 +1,3 @@
+Telt alle waarden van de array bij elkaar op, maar begrenst 
+de waarde op de gegeven max. Haalt de uiterste twee waarden 
+eraf en herhaalt

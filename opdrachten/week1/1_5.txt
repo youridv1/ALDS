@@ -1,0 +1,6 @@
+21: O(n)
+22: O(n^2)
+23: O(n^2)
+24: O(n^3) tenzij getRandomInt() schaalt met input
+25: O(n^2)
+26: O(n)

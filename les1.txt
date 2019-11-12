@@ -1,0 +1,39 @@
+Waarom is sommige code beter met geheugen/sneller?
+  Zelfs als ze dezelfde output leveren.
+
+Algoritme: high level beschrijving van wat de code doet. Precies genoeg om de efficientie te zien/beschrijven.
+
+Negeren implementatiedetails
+  Zoals de programmeertaal.
+
+Beperkte middelen
+  Energie-efficientie, Gelimiteerd geheugen.
+
+Pseudo code:
+  Engels en onzin
+  Hoeft niet volgens regels
+
+Wat is het betere Algoritme:
+  Zo min mogelijk werk.
+  Minder run-time eigenlijk
+    Maar hardware
+  Aantal cpu operations
+    Maar compiler
+  Hoeveel langzamer wordt het bij grotere input
+  Worst case runtime: hoe erg kan het zijn
+
+Big Oh notation:
+  In the order of
+  8n+7
+  O(8n+7)
+  O(8n)
+  O(n)
+
+Order:
+  Nested for loops tellen als ze hetzelfde doen
+    Als de functies in de loops een constante runtime hebben
+
+Niet alle programmas hebben loopstructuur
+  Recursie is niet 'graties'
+
+fibonacci recursief oplossen zuigt.
