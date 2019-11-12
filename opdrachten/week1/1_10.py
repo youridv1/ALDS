@@ -1,12 +1,12 @@
 def moneyPossibilities(grens: int, amount: int, geld: list, matrix: list):
     if matrix[grens][amount] == -1:
         if amount == 0:
-            matrix[grens][amount] = 0
-        if grens == 0:
             matrix[grens][amount] = 1
-        if amount >= geld[grens]:
+        elif grens == 0:
+            matrix[grens][amount] = 1
+        elif amount >= geld[grens]:
             matrix[grens][amount] = moneyPossibilities(grens-1, amount, geld, matrix) + moneyPossibilities(grens, amount-geld[grens], geld, matrix)
-        if amount < geld[grens]:
+        elif amount < geld[grens]:
             matrix[grens][amount] = moneyPossibilities(grens-1, amount, geld, matrix)
     return matrix[grens][amount]
 
