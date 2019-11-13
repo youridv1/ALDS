@@ -17,9 +17,9 @@ def main(amount: int):
     matrix = []
     lijst = []
 
-    for i in range(amount+1):
+    for _ in range(amount+1):
         lijst.append(-1)
-    for i in range(len(geld)):
+    for _ in range(len(geld)):
         matrix.append(lijst)
 
     print(moneyPossibilities(12, amount, geld, matrix))
