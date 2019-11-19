@@ -15,7 +15,7 @@ def hairy(l: list):
         for j in range(i+1, len(l)):
             for k in range(j+1, len(l)):
                 tup = (l[i], l[j], l[k])
-                relativeHair = mean(tup) - mean(l)
+                relativeHair = mean(tup) - (sum(l) - sum(tup))/(len(l) - 3)
                 item = (tup, relativeHair)
                 result.append(item)
     return result

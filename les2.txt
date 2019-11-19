@@ -1,0 +1,17 @@
+Data structures
+    Containers
+    Standaard algoritmen
+        add iterate remove
+    Classes
+        dynamic memory
+    other structures
+        stack
+    Array:
+        fixed size
+        filled
+        indexed
+        standard on hardware
+    Stack:
+        dynamic size
+        LIFO
+    
