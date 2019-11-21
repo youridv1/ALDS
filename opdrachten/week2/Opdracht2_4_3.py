@@ -1,8 +1,11 @@
 def partition(l: list, lo: int, hi: int):
-    pivot = min(l)
+    if hi <= lo:
+        return l, 0
+    pivot = min(l[lo:hi])
     ind = l.index(pivot)
     l[hi], l[ind] = l[ind], l[hi]
-    print(l)
+    pivot = l[hi]
+    #print(l)
     i = lo
     cmp = 0
     for j in range(lo, hi):
@@ -11,6 +14,7 @@ def partition(l: list, lo: int, hi: int):
             l[i], l[j] = l[j], l[i]
             i += 1
     l[i], l[hi] = l[hi], l[i]
+    print(l)
     return i, cmp
 
 
@@ -19,6 +23,7 @@ def quickSort(l: list, lo: int, hi: int):
     if lo >= hi:
         return l, 1
     p, cmp[0] = partition(l, lo, hi)
+    print(p)
     l, cmp[1] = quickSort(l, lo, p-1)
     l, cmp[2] = quickSort(l, p+1, hi)
     return l, sum(cmp)+1

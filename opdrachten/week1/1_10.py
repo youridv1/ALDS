@@ -26,5 +26,5 @@ def main(amount: int):
 
     print(moneyPossibilities(12, amount, geld, matrix))
 
-main(-1)
+main(300)
 
