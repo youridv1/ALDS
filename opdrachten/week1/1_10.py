@@ -1,4 +1,6 @@
 def moneyPossibilities(grens: int, amount: int, geld: list, matrix: list):
+    if amount < 0:
+        return 0
     if matrix[grens][amount] == -1:
         if amount == 0:
             matrix[grens][amount] = 1
@@ -24,5 +26,5 @@ def main(amount: int):
 
     print(moneyPossibilities(12, amount, geld, matrix))
 
-main(7)
+main(-1)
 
