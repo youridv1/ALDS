@@ -12,7 +12,7 @@ class priorityQueue():
     
     def contains(self, v):
         for i in self.priorities:
-            if i.contains(v):
+            if v in i:
                 return True
         return False
 
@@ -26,7 +26,7 @@ class priorityQueue():
     def remove(self, e):
        if self.priorities:
            for i in self.priorities:
-               if i is not None:
+               if i:
                    while(e in i):
                        i.remove(e)
 

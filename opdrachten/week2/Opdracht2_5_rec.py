@@ -6,12 +6,12 @@ class linkedList():
     def append(self, value):
         if self.tail == None:
             self.tail = linkedList(value)
-            return
-        self.tail.append(value)
+        else:
+            self.tail.append(value)
 
     def print(self):
         print(self.value)
-        if self.tail is not None:
+        if self.tail:
             self.tail.print()
 
     def delete(self, value, prev = None):
@@ -46,4 +46,7 @@ l = linkedList(1)
 l.append(2)
 l.append(3)
 l.append(0)
-print(l.min())
+l.append(5)
+l.append(6)
+l.delete(0)
+l.print()

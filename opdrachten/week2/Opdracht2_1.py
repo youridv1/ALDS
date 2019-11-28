@@ -40,9 +40,7 @@ class myStack():
         >>> stack.isEmpty()
         True
         """
-        if not self.list:
-            return True
-        return False
+        return not self.list
 
     def push(self, x):
         """
@@ -84,7 +82,9 @@ class myStack():
         >>> stack.pop()
         15
         """
-        return self.list.pop()
+        if self.list:
+            return self.list.pop()
+        return None
 
     def peek(self):
         """

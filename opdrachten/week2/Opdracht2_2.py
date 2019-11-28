@@ -28,9 +28,9 @@ def bracketsProblem(s: str):
     for char in s:
         if char in open:
             stack.push(char)
-        elif char in close and open[close.find(char)] == stack.peek():
-            stack.pop()
-        elif char in close:
+        elif char in close and open[close.find(char)] == stack.pop():
+            continue
+        else:
             return False
     return stack.isEmpty()
 
