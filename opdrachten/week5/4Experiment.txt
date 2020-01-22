@@ -1,0 +1,2 @@
+0.903 gave me a result of 54.37495135704762 which was the highest result when testing from 0.000 to 1.000
+I did this by iterating 1000 times and increasing pChange by 0.001 each time.

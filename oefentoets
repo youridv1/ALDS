@@ -1,0 +1,36 @@
+Vraag 1.1:
+Mijn antwoord
+O(n)
+
+Correct antwoord
+2^n
+recursion wordt 2x gecalled per iteratie van op zn hoogst N
+
+
+Vraag 1.2:
+input: integer n, list l
+output: blabla voorbeeld
+
+if l[n] is null:
+	if( n = 0 )
+		 l[n] = 0
+	elif( n = 1 or 2 ) 
+		l[n] = 1
+else( l[n] = interesting(n-2) * 2 + interesting(n-1) )
+return l[n]
+
+
+Vraag 1.3:
+O(n) want niets wordt twee maal berekend
+
+
+
+Vraag 2.1:
+def count():
+	if not (left or right):
+		return 0
+	if not right:
+		return left.count
+	if not left:
+		return right.count
+	return left.count() + right.count() + 1
